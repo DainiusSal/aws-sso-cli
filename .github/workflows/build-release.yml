@@ -22,7 +22,6 @@ jobs:
       - name: Run Makefile
         run: |
           make package
-          make darwin
           make linux
           make linux-arm64
           make windows
@@ -45,6 +44,7 @@ jobs:
       - name: Run Makefile
         run: |
           make darwin-arm64
+          make darwin
 
       - name: Upload files as artifact
         uses: actions/upload-artifact@v3
