@@ -33,6 +33,7 @@ jobs:
         with:
           name: ubuntu-build-files
           path: dist/aws-sso*
+          retention-days: 1
 
   macos-build:
     name: Build binaries on MacOS
@@ -51,6 +52,7 @@ jobs:
         with:
           name: macos-build-files
           path: dist/aws-sso*
+          retention-days: 1
 
   sign-and-upload-files:
     name: Sign and upload binary files
